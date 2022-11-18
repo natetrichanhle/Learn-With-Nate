@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 let sales = 123456789;
 let course = 'Typescript';
 let is_published = true;
@@ -44,6 +45,34 @@ greet(undefined);
 function getCustomer(id) {
     return id === 0 ? null : { birthday: new Date() };
 }
-let customer = getCustomer(0);
-console.log(customer === null || customer === void 0 ? void 0 : customer.birthday);
+let customer = getCustomer(1);
+console.log((_a = customer === null || customer === void 0 ? void 0 : customer.birthday) === null || _a === void 0 ? void 0 : _a.getFullYear());
+let log = null;
+log === null || log === void 0 ? void 0 : log('a');
+let speed = null;
+let ride = {
+    speed: speed !== null && speed !== void 0 ? speed : 30
+};
+let phone = document.getElementById('phone');
+phone.value;
+function reject(message) {
+    throw new Error(message);
+}
+function processEvents() {
+    while (true) {
+    }
+}
+reject('...');
+class Account {
+    constructor(id, owner, balance) {
+        this.id = id;
+        this.owner = owner;
+        this.balance = balance;
+    }
+    deposit(amount) {
+        if (amount <= 0)
+            throw new Error('Invalid amount');
+        this.balance = amount;
+    }
+}
 //# sourceMappingURL=index.js.map
